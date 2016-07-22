@@ -1,12 +1,12 @@
 
 Pod::Spec.new do |s|
-s.name         = "KuzDevLib"
+s.name         = "kuzdevlib"
 s.version      = "1.0.0"
 s.summary      = "Categories and Helpers."
 s.description  = <<-DESC
 Categories and Helpers for my development
 DESC
-# s.homepage     = "http://www.bukovinski.com"
+s.homepage     = "http://kuz-dev.ru/"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.author       = { 'Mikhail Kuzevanob' => 'megakozma@gmail.com' }
 s.source       = { :git => "https://github.com/megakozma/kuzdevlib.git", :tag => s.version.to_s }
