@@ -7,34 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9E2B8081D420CE000F1D60F /* kuzdevlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9E2B8071D420CE000F1D60F /* kuzdevlib.h */; };
-		A9E2B80A1D420CE000F1D60F /* kuzdevlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E2B8091D420CE000F1D60F /* kuzdevlib.m */; };
+		A9E2B81B1D420DAB00F1D60F /* kuzdevlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9E2B81A1D420DAB00F1D60F /* kuzdevlib.h */; };
+		A9E2B81D1D420DAB00F1D60F /* kuzdevlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E2B81C1D420DAB00F1D60F /* kuzdevlib.m */; };
+		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A9E2B8021D420CE000F1D60F /* CopyFiles */ = {
+		A9E2B8161D420DAB00F1D60F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A9E2B8081D420CE000F1D60F /* kuzdevlib.h in CopyFiles */,
+				A9E2B81B1D420DAB00F1D60F /* kuzdevlib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E2B8071D420CE000F1D60F /* kuzdevlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kuzdevlib.h; sourceTree = "<group>"; };
 		A9E2B8091D420CE000F1D60F /* kuzdevlib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kuzdevlib.m; sourceTree = "<group>"; };
+		A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLib.h"; sourceTree = "<group>"; };
+		A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLib.m"; sourceTree = "<group>"; };
+		A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E2B81A1D420DAB00F1D60F /* kuzdevlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kuzdevlib.h; sourceTree = "<group>"; };
+		A9E2B81C1D420DAB00F1D60F /* kuzdevlib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kuzdevlib.m; sourceTree = "<group>"; };
+		A9E2B8211D420DDE00F1D60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A9E2B8011D420CE000F1D60F /* Frameworks */ = {
+		A9E2B8151D420DAB00F1D60F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +51,9 @@
 		A9E2B7FB1D420CE000F1D60F = {
 			isa = PBXGroup;
 			children = (
+				A9E2B8211D420DDE00F1D60F /* UIKit.framework */,
 				A9E2B8061D420CE000F1D60F /* kuzdevlib */,
+				A9E2B8191D420DAB00F1D60F /* kuzdevlib */,
 				A9E2B8051D420CE000F1D60F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +61,7 @@
 		A9E2B8051D420CE000F1D60F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */,
+				A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +69,27 @@
 		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
 			isa = PBXGroup;
 			children = (
+				A9E2B8101D420D0000F1D60F /* Categories */,
 				A9E2B8071D420CE000F1D60F /* kuzdevlib.h */,
 				A9E2B8091D420CE000F1D60F /* kuzdevlib.m */,
+			);
+			path = kuzdevlib;
+			sourceTree = "<group>";
+		};
+		A9E2B8101D420D0000F1D60F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */,
+				A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A9E2B8191D420DAB00F1D60F /* kuzdevlib */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2B81A1D420DAB00F1D60F /* kuzdevlib.h */,
+				A9E2B81C1D420DAB00F1D60F /* kuzdevlib.m */,
 			);
 			path = kuzdevlib;
 			sourceTree = "<group>";
@@ -69,13 +97,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9E2B8031D420CE000F1D60F /* kuzdevlib */ = {
+		A9E2B8171D420DAB00F1D60F /* kuzdevlib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9E2B80D1D420CE000F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */;
+			buildConfigurationList = A9E2B81E1D420DAB00F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */;
 			buildPhases = (
-				A9E2B8001D420CE000F1D60F /* Sources */,
-				A9E2B8011D420CE000F1D60F /* Frameworks */,
-				A9E2B8021D420CE000F1D60F /* CopyFiles */,
+				A9E2B8141D420DAB00F1D60F /* Sources */,
+				A9E2B8151D420DAB00F1D60F /* Frameworks */,
+				A9E2B8161D420DAB00F1D60F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -83,7 +111,7 @@
 			);
 			name = kuzdevlib;
 			productName = kuzdevlib;
-			productReference = A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */;
+			productReference = A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -92,10 +120,13 @@
 		A9E2B7FC1D420CE000F1D60F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "kuz-dev.ru";
 				TargetAttributes = {
-					A9E2B8031D420CE000F1D60F = {
+					A9E2B8171D420DAB00F1D60F = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -112,17 +143,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9E2B8031D420CE000F1D60F /* kuzdevlib */,
+				A9E2B8171D420DAB00F1D60F /* kuzdevlib */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A9E2B8001D420CE000F1D60F /* Sources */ = {
+		A9E2B8141D420DAB00F1D60F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9E2B80A1D420CE000F1D60F /* kuzdevlib.m in Sources */,
+				A9E2B81D1D420DAB00F1D60F /* kuzdevlib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +242,7 @@
 			};
 			name = Release;
 		};
-		A9E2B80E1D420CE000F1D60F /* Debug */ = {
+		A9E2B81F1D420DAB00F1D60F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -220,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		A9E2B80F1D420CE000F1D60F /* Release */ = {
+		A9E2B8201D420DAB00F1D60F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -241,11 +272,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9E2B80D1D420CE000F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */ = {
+		A9E2B81E1D420DAB00F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9E2B80E1D420CE000F1D60F /* Debug */,
-				A9E2B80F1D420CE000F1D60F /* Release */,
+				A9E2B81F1D420DAB00F1D60F /* Debug */,
+				A9E2B8201D420DAB00F1D60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
