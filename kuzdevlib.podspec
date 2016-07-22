@@ -9,10 +9,10 @@ DESC
 s.homepage     = "http://kuz-dev.ru/"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.author       = { 'Mikhail Kuzevanob' => 'megakozma@gmail.com' }
-s.source       = { :git => "https://github.com/megakozma/kuzdevlib.git", :tag => s.version.to_s }
+s.source       = { :git => "https://github.com/megakozma/kuzdevlib.git", :tag => 'master' }
 s.ios.deployment_target = '7.0'
 s.tvos.deployment_target = '9.0'
-s.source_files = '*.{h,m}'
+s.source_files = 'kuzdevlib/**/*.{h,m}'
 s.frameworks   = "UIKit"
 s.requires_arc = true
 end
