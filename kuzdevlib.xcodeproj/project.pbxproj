@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E2B8081D420CE000F1D60F /* kuzdevlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9E2B8071D420CE000F1D60F /* kuzdevlib.h */; };
+		A9E2B80A1D420CE000F1D60F /* kuzdevlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E2B8091D420CE000F1D60F /* kuzdevlib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9E2B8021D420CE000F1D60F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A9E2B8081D420CE000F1D60F /* kuzdevlib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E2B8071D420CE000F1D60F /* kuzdevlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kuzdevlib.h; sourceTree = "<group>"; };
+		A9E2B8091D420CE000F1D60F /* kuzdevlib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kuzdevlib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E2B8011D420CE000F1D60F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9E2B7FB1D420CE000F1D60F = {
+			isa = PBXGroup;
+			children = (
+				A9E2B8061D420CE000F1D60F /* kuzdevlib */,
+				A9E2B8051D420CE000F1D60F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E2B8051D420CE000F1D60F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
+			isa = PBXGroup;
+			children = (
+				A9E2B8071D420CE000F1D60F /* kuzdevlib.h */,
+				A9E2B8091D420CE000F1D60F /* kuzdevlib.m */,
+			);
+			path = kuzdevlib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9E2B8031D420CE000F1D60F /* kuzdevlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E2B80D1D420CE000F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */;
+			buildPhases = (
+				A9E2B8001D420CE000F1D60F /* Sources */,
+				A9E2B8011D420CE000F1D60F /* Frameworks */,
+				A9E2B8021D420CE000F1D60F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kuzdevlib;
+			productName = kuzdevlib;
+			productReference = A9E2B8041D420CE000F1D60F /* libkuzdevlib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9E2B7FC1D420CE000F1D60F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "kuz-dev.ru";
+				TargetAttributes = {
+					A9E2B8031D420CE000F1D60F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A9E2B7FF1D420CE000F1D60F /* Build configuration list for PBXProject "kuzdevlib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9E2B7FB1D420CE000F1D60F;
+			productRefGroup = A9E2B8051D420CE000F1D60F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9E2B8031D420CE000F1D60F /* kuzdevlib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9E2B8001D420CE000F1D60F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E2B80A1D420CE000F1D60F /* kuzdevlib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9E2B80B1D420CE000F1D60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9E2B80C1D420CE000F1D60F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9E2B80E1D420CE000F1D60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9E2B80F1D420CE000F1D60F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E2B7FF1D420CE000F1D60F /* Build configuration list for PBXProject "kuzdevlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E2B80B1D420CE000F1D60F /* Debug */,
+				A9E2B80C1D420CE000F1D60F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E2B80D1D420CE000F1D60F /* Build configuration list for PBXNativeTarget "kuzdevlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E2B80E1D420CE000F1D60F /* Debug */,
+				A9E2B80F1D420CE000F1D60F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9E2B7FC1D420CE000F1D60F /* Project object */;
+}
