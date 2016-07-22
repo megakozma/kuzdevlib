@@ -6,7 +6,7 @@
 //  Copyright © 2016 kuz-dev.ru. All rights reserved.
 //
 
-
+#import <UIKit/UIKit.h>
 
 @interface UIView (KuzDevLib)
 
