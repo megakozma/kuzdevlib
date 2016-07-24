@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */; };
 		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A9D39F6A1D4495BA0026C55C /* UIButton+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KuzDevLib.h"; sourceTree = "<group>"; };
+		A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +76,8 @@
 			children = (
 				A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */,
 				A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */,
+				A9D39F6A1D4495BA0026C55C /* UIButton+KuzDevLib.h */,
+				A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +267,7 @@
 				A9E2B8201D420DAB00F1D60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
