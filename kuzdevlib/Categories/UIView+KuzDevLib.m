@@ -150,6 +150,16 @@ static const void *TagObjectKey = &TagObjectKey;
     self.frame = frame;
 }
 
+
+-(void) roundCornerWithRadius:(CGFloat) radius borderColor:(UIColor *) color borderWidth:(CGFloat) width
+{
+    [self.layer setBorderColor: [color CGColor]];
+    self.layer.borderWidth = width;
+    [self.layer setCornerRadius: radius];
+    //    [v.layer setMasksToBounds:YES];
+}
+
+
 #pragma mark - layout
 
 -(void)forLayout

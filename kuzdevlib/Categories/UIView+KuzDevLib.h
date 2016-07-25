@@ -21,9 +21,14 @@
 -(void) setWidth:(CGFloat)width;
 -(void) setPoint: (CGPoint)point;
 -(void) setSize: (CGSize)size;
+
+-(void) roundCornerWithRadius:(CGFloat) radius borderColor:(UIColor *) color borderWidth:(CGFloat) width;
+
 -(CGFloat) leftIndent;
 -(CGFloat) topIndent;
 -(CGRect) frameInView: (UIView *)inView;
+
+
 
 -(void)alignToCenter;
 -(void)alignToHorzCenter;
