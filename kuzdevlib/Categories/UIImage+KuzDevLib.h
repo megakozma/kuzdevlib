@@ -21,4 +21,11 @@
 -(UIImage *)imageOnImage:(UIImage *)image;
 +(UIImage *)imageFromColor:(UIColor *)color size: (CGSize)size;
 
+
++(UIImage *)mainScreenShot;
++(UIImage *)screenShotFromView: (UIView *)view;
+-(UIImage *)rotateAt: (UIImageOrientation) orientation;
+
+
+
 @end
