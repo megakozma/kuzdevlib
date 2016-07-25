@@ -8,3 +8,4 @@
 
 #import "UIView+KuzDevLib.h"
 #import "UIButton+KuzDevLib.h"
+#import "UIAlertView+NSCookbook.h"
