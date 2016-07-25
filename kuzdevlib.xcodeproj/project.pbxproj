@@ -10,6 +10,7 @@
 		A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */; };
 		A9D39F801D45E7330026C55C /* UIAlertView+NSCookbook.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F7F1D45E7330026C55C /* UIAlertView+NSCookbook.m */; };
 		A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */; };
+		A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */; };
 		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		A9D39F7F1D45E7330026C55C /* UIAlertView+NSCookbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NSCookbook.m"; sourceTree = "<group>"; };
 		A9D39F811D45E7C70026C55C /* UILabel+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+KuzDevLib.m"; sourceTree = "<group>"; };
+		A9D39F841D4601E50026C55C /* UIImage+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KuzDevLib.h"; sourceTree = "<group>"; };
+		A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,8 @@
 				A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */,
 				A9D39F811D45E7C70026C55C /* UILabel+KuzDevLib.h */,
 				A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */,
+				A9D39F841D4601E50026C55C /* UIImage+KuzDevLib.h */,
+				A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			files = (
 				A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */,
 				A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */,
+				A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */,
 				A9D39F801D45E7330026C55C /* UIAlertView+NSCookbook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

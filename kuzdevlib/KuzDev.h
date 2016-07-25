@@ -10,3 +10,4 @@
 #import "UIButton+KuzDevLib.h"
 #import "UIAlertView+NSCookbook.h"
 #import "UILabel+KuzDevLib.h"
+#import "UIImage+KuzDevLib.h"
