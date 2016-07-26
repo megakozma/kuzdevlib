@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "kuzdevlib"
-s.version      = "1.0.10"
+s.version      = "1.0.11"
 s.summary      = "Categories and Helpers."
 s.description  = <<-DESC
 Categories and Helpers for my development
@@ -16,6 +16,10 @@ s.source_files = 'kuzdevlib/KuzDev.h'
 
 s.subspec 'Categories' do |ss|
     ss.source_files = 'kuzdevlib/Categories/*.{h,m}'
+end
+
+s.subspec 'Helpers' do |ss|
+ss.source_files = 'kuzdevlib/Helpers/*.{h,m}'
 end
 
 s.frameworks   = "UIKit"
