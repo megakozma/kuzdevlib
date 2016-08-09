@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  kuzdevlib
+//
+//  Created by Михаил Кузеванов on 09.08.16.
+//  Copyright © 2016 kuz-dev.ru. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//#import "KuzDev.h"
+#import "./KuzDev.h"
+
+#endif /* PrefixHeader_pch */
