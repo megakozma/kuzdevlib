@@ -27,4 +27,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #import "UIImage+KuzDevLib.h"
 #import "UIColor+KuzDevLib.h"
 
+#import "KDLLabelImage.h"
+
 #import "KDLScrollTextsHelper.h"
+

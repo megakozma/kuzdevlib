@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A9039D2D1D50953B005F227A /* UIColor+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9039D2C1D50953B005F227A /* UIColor+KuzDevLib.m */; };
 		A9347F931D47BBAC006C23E2 /* KDLScrollTextsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9347F921D47BBAC006C23E2 /* KDLScrollTextsHelper.m */; };
+		A994DF351D59B752009D0C12 /* KDLLabelImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A994DF341D59B752009D0C12 /* KDLLabelImage.m */; };
 		A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */; };
 		A9D39F801D45E7330026C55C /* UIAlertView+NSCookbook.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F7F1D45E7330026C55C /* UIAlertView+NSCookbook.m */; };
 		A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */; };
@@ -33,6 +34,8 @@
 		A9039D2C1D50953B005F227A /* UIColor+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9347F911D47BBAC006C23E2 /* KDLScrollTextsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDLScrollTextsHelper.h; sourceTree = "<group>"; };
 		A9347F921D47BBAC006C23E2 /* KDLScrollTextsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDLScrollTextsHelper.m; sourceTree = "<group>"; };
+		A994DF331D59B752009D0C12 /* KDLLabelImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDLLabelImage.h; sourceTree = "<group>"; };
+		A994DF341D59B752009D0C12 /* KDLLabelImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDLLabelImage.m; sourceTree = "<group>"; };
 		A9D39F6A1D4495BA0026C55C /* UIButton+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9D39F7E1D45E7330026C55C /* UIAlertView+NSCookbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NSCookbook.h"; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A994DF321D59B509009D0C12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A994DF331D59B752009D0C12 /* KDLLabelImage.h */,
+				A994DF341D59B752009D0C12 /* KDLLabelImage.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A9E2B7FB1D420CE000F1D60F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +101,7 @@
 		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
 			isa = PBXGroup;
 			children = (
+				A994DF321D59B509009D0C12 /* Views */,
 				A9347F901D47BB78006C23E2 /* Helpers */,
 				A9E2B8101D420D0000F1D60F /* Categories */,
 				A9E2B8231D42357800F1D60F /* KuzDev.h */,
@@ -177,6 +190,7 @@
 				A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */,
 				A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */,
 				A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */,
+				A994DF351D59B752009D0C12 /* KDLLabelImage.m in Sources */,
 				A9347F931D47BBAC006C23E2 /* KDLScrollTextsHelper.m in Sources */,
 				A9039D2D1D50953B005F227A /* UIColor+KuzDevLib.m in Sources */,
 				A9D39F801D45E7330026C55C /* UIAlertView+NSCookbook.m in Sources */,
