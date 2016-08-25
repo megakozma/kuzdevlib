@@ -40,5 +40,7 @@
 -(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top;
 -(void)layoutToCenterFixesSize:(CGSize)size;
 -(void)layoutFullScreen;
+-(void)layoutVerCenter;
+-(void)layoutHorzCenter;
 
 @end

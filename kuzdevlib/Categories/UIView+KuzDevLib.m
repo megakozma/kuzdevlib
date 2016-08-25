@@ -329,5 +329,27 @@ static const void *TagObjectKey = &TagObjectKey;
 }
 
 
+-(void)layoutVerCenter
+{
+    [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
+                                                     attribute:NSLayoutAttributeCenterY
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self.superview
+                                                     attribute:NSLayoutAttributeCenterY
+                                                    multiplier:1
+                                                      constant:0]];
+}
+
+
+-(void)layoutHorzCenter
+{
+    [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
+                                                               attribute:NSLayoutAttributeCenterX
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:self.superview
+                                                               attribute:NSLayoutAttributeCenterX
+                                                              multiplier:1
+                                                                constant:0]];
+}
 
 @end
