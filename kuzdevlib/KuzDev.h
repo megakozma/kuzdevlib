@@ -27,6 +27,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #import "UIImage+KuzDevLib.h"
 #import "UIColor+KuzDevLib.h"
 #import "NSAttributedString+SM.h"
+#import "NSDate+KuzDevLib.h"
 
 #import "KDLLabelImage.h"
 
