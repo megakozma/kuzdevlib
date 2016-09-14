@@ -21,6 +21,56 @@
     return self;
 }
 
+- (instancetype)initAtImage: (UIImage *)image antText: (NSString *)text font: (UIFont *)font textColor: (UIColor *)textColor
+{
+    self = [super init];
+    if (self) {
+        [self createLayoutViewAtImage:image antText:text font:font textColor:textColor];
+    }
+    return self;
+}
+
+-(void)createLayoutViewAtImage: (UIImage *)image antText: (NSString *)text font: (UIFont *)font textColor: (UIColor *)textColor
+{
+    
+    _imgView = [[UIImageView alloc] initWithImage:image];
+    self.imgView.userInteractionEnabled = YES;
+    [self addSubview:self.imgView];
+    
+    _label = [[UILabel alloc] initWithTextColor:textColor
+                                           font:font
+                                           text:text];
+    [_label setLeft:[self.imgView leftIndent]+10];
+    _label.numberOfLines = 0;
+    [self addSubview:_label];
+    _label.userInteractionEnabled = YES;
+    
+    
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj forLayout];
+    }];
+    
+    
+    NSDictionary *metrics = @{@"img_width":@(image.size.width),
+                              @"img_height":@(image.size.height),};
+    NSDictionary *views = NSDictionaryOfVariableBindings(_label, _imgView);
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[_imgView(img_width)]-[_label]|"
+                                                                 options:0
+                                                                 metrics:metrics
+                                                                   views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_imgView(img_height)]"
+                                                                 options:0
+                                                                 metrics:metrics
+                                                                   views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_label]|"
+                                                                 options:0
+                                                                 metrics:metrics
+                                                                   views:views]];
+    [_imgView layoutVerCenter];
+    
+}
+
+
 -(void)createViewAtImage: (UIImage *)image antText: (NSString *)text font: (UIFont *)font textColor: (UIColor *)textColor maxWidth: (CGFloat)width
 {
     

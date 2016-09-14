@@ -11,6 +11,7 @@
 @interface KDLLabelImage : UIView
 
 - (instancetype)initAtImage: (UIImage *)image antText: (NSString *)text font: (UIFont *)font textColor: (UIColor *)textColor maxWidth: (CGFloat)width;
+- (instancetype)initAtImage: (UIImage *)image antText: (NSString *)text font: (UIFont *)font textColor: (UIColor *)textColor;
 
 @property (readonly) UIImageView *imgView;
 @property (readonly) UILabel *label;
