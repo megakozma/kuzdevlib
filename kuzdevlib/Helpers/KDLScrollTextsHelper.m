@@ -28,7 +28,7 @@
                                                      name:UIKeyboardWillHideNotification
                                                    object:nil];
         NSLog(@"%@", NSStringFromClass([view class]));
-        top = 0;
+        top = MAXFLOAT;
     }
     return self;
 }
@@ -59,7 +59,7 @@
     if (r.origin.y >= CGRectGetMaxY(f))
         return;
     
-    if (top == 0)
+    if (top == MAXFLOAT)
         top = parentView.frame.origin.y;
     [UIView animateWithDuration: DURATION
                           delay: 0.0
@@ -85,9 +85,12 @@
                         options: UIViewAnimationOptionCurveEaseOut
      
                      animations:^{
-                         CGRect frame = parentView.frame;
-                         frame.origin.y =  top;
-                         parentView.frame = frame;
+                         if (top != MAXFLOAT)
+                         {
+                             CGRect frame = parentView.frame;
+                             frame.origin.y =  top;
+                             parentView.frame = frame;
+                         }
                          
                      }
      
