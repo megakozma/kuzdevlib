@@ -19,10 +19,11 @@
         self.font = font;
         self.text = text;
         self.numberOfLines = numberOfLines;
-        [self setWidth:width];
-        [self sizeToFit];
         if (width > 0)
+        {
             [self setWidth:width];
+            [self sizeToFit];
+        }
     }
     return self;
 }
