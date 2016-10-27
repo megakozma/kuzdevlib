@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    ImagePositionCender,
+    ImagePositionLeftTop,
+    
+} KDLImagePosition;
+
 @interface UIImage (KuzDevLib)
 
 -(UIImage *)resizedImage:(CGSize)size;
@@ -18,7 +24,7 @@
 - (UIImage *) resizedImageWithMinimumSize: (CGSize) size;
 
 
--(UIImage *)imageOnImage:(UIImage *)image;
+-(UIImage *)imageOnImage:(UIImage *)image position: (KDLImagePosition)position;
 +(UIImage *)imageFromColor:(UIColor *)color size: (CGSize)size;
 
 

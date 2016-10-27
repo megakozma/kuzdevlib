@@ -23,11 +23,24 @@
     return image;
 }
 
--(UIImage *)imageOnImage:(UIImage *)image
+-(UIImage *)imageOnImage:(UIImage *)image position:(KDLImagePosition)position
 {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
-    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height)];
-    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    CGRect selfFrame = CGRectMake(0, 0, self.size.width, self.size.height);
+    [self drawInRect:selfFrame];
+    CGRect frameOnImage = CGRectMake(0, 0, image.size.width, image.size.height);
+    switch (position) {
+        case ImagePositionLeftTop:
+            break;
+        case ImagePositionCender:
+        {
+            frameOnImage.origin.y = (selfFrame.size.height / 2) - (frameOnImage.size.height / 2);
+            frameOnImage.origin.x = (selfFrame.size.width / 2) - (frameOnImage.size.width / 2);
+            break;
+        }
+            
+    }
+    [image drawInRect:frameOnImage];
     UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return resultImage;
