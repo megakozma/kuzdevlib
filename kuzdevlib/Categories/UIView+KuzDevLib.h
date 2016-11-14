@@ -42,5 +42,6 @@
 -(void)layoutFullScreen;
 -(void)layoutVerCenter;
 -(void)layoutHorzCenter;
+-(void)layoutAtInsets: (UIEdgeInsets)insets;
 
 @end

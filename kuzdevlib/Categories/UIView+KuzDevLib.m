@@ -332,12 +332,12 @@ static const void *TagObjectKey = &TagObjectKey;
 -(void)layoutVerCenter
 {
     [self.superview addConstraint:[NSLayoutConstraint constraintWithItem:self
-                                                     attribute:NSLayoutAttributeCenterY
-                                                     relatedBy:NSLayoutRelationEqual
-                                                        toItem:self.superview
-                                                     attribute:NSLayoutAttributeCenterY
-                                                    multiplier:1
-                                                      constant:0]];
+                                                               attribute:NSLayoutAttributeCenterY
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:self.superview
+                                                               attribute:NSLayoutAttributeCenterY
+                                                              multiplier:1
+                                                                constant:0]];
 }
 
 
@@ -350,6 +350,30 @@ static const void *TagObjectKey = &TagObjectKey;
                                                                attribute:NSLayoutAttributeCenterX
                                                               multiplier:1
                                                                 constant:0]];
+}
+
+-(void)layoutAtInsets:(UIEdgeInsets)insets
+{
+    if (!self.superview)
+        [NSException raise:@"layoutAtInsets" format:@"superview is nil"];
+    [self forLayout];
+    UIView *view = self;
+    NSDictionary *views = NSDictionaryOfVariableBindings(view);
+    NSDictionary *metrics = @{@"top":@(insets.top),
+                              @"bottom":@(insets.bottom),
+                              @"left":@(insets.left),
+                              @"right":@(insets.right)
+                              };
+    
+    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-left-[view]-right-|"
+                                                                           options:0
+                                                                           metrics:metrics
+                                                                             views:views]];
+    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-top-[view]-bottom-|"
+                                                                           options:0
+                                                                           metrics:metrics
+                                                                             views:views]];
+    
 }
 
 @end
