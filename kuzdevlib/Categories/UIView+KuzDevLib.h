@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define KDL_LAYOUT_DASH -MAXFLOAT
-#define KDL_LAYOUT_ALLDASH_INSET UIEdgeInsetsMake(KLD_LAYOUT_DASH, KLD_LAYOUT_DASH, KLD_LAYOUT_DASH, KLD_LAYOUT_DASH)
-
 @interface UIView (KuzDevLib)
 
 @property (retain) NSString *tagString;
@@ -38,13 +35,6 @@
 -(void)alignToVerCenter;
 
 
--(void)forLayout;
--(void)layoutToVerCenterFixesSize: (CGSize)size right: (CGFloat)right;
--(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top;
--(void)layoutToCenterFixesSize:(CGSize)size;
--(void)layoutFullScreen;
--(void)layoutVerCenter;
--(void)layoutHorzCenter;
--(void)layoutAtInsets: (UIEdgeInsets)insets;
+
 
 @end

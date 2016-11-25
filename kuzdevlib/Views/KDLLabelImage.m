@@ -8,6 +8,7 @@
 
 #import "KDLLabelImage.h"
 #import "UIView+KuzDevLib.h"
+#import "UIView+KuzDevLibLayout.h"
 #import "UILabel+KuzDevLib.h"
 
 @implementation KDLLabelImage

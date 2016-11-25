@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9E2B8031D420CE000F1D60F"
+               BlueprintIdentifier = "A9E2B8171D420DAB00F1D60F"
                BuildableName = "libkuzdevlib.a"
                BlueprintName = "kuzdevlib"
                ReferencedContainer = "container:kuzdevlib.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9E2B8031D420CE000F1D60F"
+            BlueprintIdentifier = "A9E2B8171D420DAB00F1D60F"
             BuildableName = "libkuzdevlib.a"
             BlueprintName = "kuzdevlib"
             ReferencedContainer = "container:kuzdevlib.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9E2B8031D420CE000F1D60F"
+            BlueprintIdentifier = "A9E2B8171D420DAB00F1D60F"
             BuildableName = "libkuzdevlib.a"
             BlueprintName = "kuzdevlib"
             ReferencedContainer = "container:kuzdevlib.xcodeproj">
