@@ -365,11 +365,37 @@ static const void *TagObjectKey = &TagObjectKey;
                               @"right":@(insets.right)
                               };
     
-    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-left-[view]-right-|"
+    NSMutableString *hFormat = [NSMutableString stringWithString:@"[view]"];
+    if (insets.left == KDL_LAYOUT_DASH)
+        [hFormat insertString:@"|-" atIndex:0];
+    else
+        [hFormat insertString:@"|-left-" atIndex:0];
+    
+    if (insets.right == KDL_LAYOUT_DASH)
+        [hFormat appendString:@"-|"];
+    else
+        [hFormat appendString:@"-right-|"];
+    
+    
+    NSMutableString *vFormat = [NSMutableString stringWithString:@"[view]"];
+    if (insets.top == KDL_LAYOUT_DASH)
+        [vFormat insertString:@"|-" atIndex:0];
+    else
+        [vFormat insertString:@"|-top-" atIndex:0];
+    
+    if (insets.bottom == KDL_LAYOUT_DASH)
+        [vFormat appendString:@"-|"];
+    else
+        [vFormat appendString:@"-bottom-|"];
+    
+    [vFormat insertString:@"V:" atIndex:0];
+    
+    
+    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:hFormat
                                                                            options:0
                                                                            metrics:metrics
                                                                              views:views]];
-    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-top-[view]-bottom-|"
+    [self.superview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:vFormat
                                                                            options:0
                                                                            metrics:metrics
                                                                              views:views]];

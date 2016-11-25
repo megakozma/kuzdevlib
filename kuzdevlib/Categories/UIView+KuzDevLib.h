@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define KDL_LAYOUT_DASH -MAXFLOAT
+#define KDL_LAYOUT_ALLDASH_INSET UIEdgeInsetsMake(KLD_LAYOUT_DASH, KLD_LAYOUT_DASH, KLD_LAYOUT_DASH, KLD_LAYOUT_DASH)
+
 @interface UIView (KuzDevLib)
 
 @property (retain) NSString *tagString;
