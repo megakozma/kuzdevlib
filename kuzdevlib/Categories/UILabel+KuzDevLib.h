@@ -15,7 +15,7 @@
 
 - (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text;
 - (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines: (NSInteger)numberOfLines;
-- (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines: (NSInteger)numberOfLines width: (CGFloat)width DEPRECATED_MSG_ATTRIBUTE("refactor. use UITableViewCell+VB");
+- (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines: (NSInteger)numberOfLines width: (CGFloat)width DEPRECATED_MSG_ATTRIBUTE("old procedure");
 
 
 @end
