@@ -28,14 +28,24 @@
     return self;
 }
 
+
+
 -(instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines:(NSInteger)numberOfLines
 {
-    return [self initWithTextColor:textColor font:font text:text numberOfLines:numberOfLines width:0];
+    self = [super init];
+    if (self) {
+        self.textColor = textColor;
+        self.font = font;
+        self.text = text;
+        self.numberOfLines = numberOfLines;
+    }
+    return self;
+
 }
 
 -(instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text
 {
-    return [self initWithTextColor:textColor font:font text:text numberOfLines:1 width:0];
+    return [self initWithTextColor:textColor font:font text:text numberOfLines:1];
 }
 
 - (instancetype)initWithAttributtedText:(NSAttributedString *)text
