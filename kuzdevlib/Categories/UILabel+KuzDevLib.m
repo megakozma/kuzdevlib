@@ -38,6 +38,21 @@
     return [self initWithTextColor:textColor font:font text:text numberOfLines:1 width:0];
 }
 
+- (instancetype)initWithAttributtedText:(NSAttributedString *)text
+{
+    return [self initWithAttributtedText:text numberOfLines:1];
+}
+
+- (instancetype)initWithAttributtedText:(NSAttributedString *)text numberOfLines: (NSInteger)numberOfLines
+{
+    self = [super init];
+    if (self) {
+        self.attributedText = text;
+        self.numberOfLines = numberOfLines;
+    }
+    return self;
+}
+
 
 
 @end
