@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "kuzdevlib"
-s.version      = "1.2.3"
+s.version      = "1.2.4"
 s.summary      = "Categories and Helpers."
 s.description  = <<-DESC
 Categories and Helpers for my development
