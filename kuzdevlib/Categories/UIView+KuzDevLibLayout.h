@@ -23,4 +23,7 @@
 -(void)layoutHorzCenter;
 -(void)layoutAtInsets: (UIEdgeInsets)insets;
 
++(CGFloat)kdlLayoutDash;
++(UIEdgeInsets)kdlLayoutAllDashInset;
+
 @end

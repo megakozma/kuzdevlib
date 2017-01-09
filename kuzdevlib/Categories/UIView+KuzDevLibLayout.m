@@ -10,6 +10,17 @@
 
 @implementation UIView (KuzDevLibLayout)
 
+
++(CGFloat)kdlLayoutDash
+{
+    return KDL_LAYOUT_DASH;
+}
+
++(UIEdgeInsets)kdlLayoutAllDashInset
+{
+    return KDL_LAYOUT_ALLDASH_INSET;
+}
+
 -(void)forLayout
 {
     self.translatesAutoresizingMaskIntoConstraints = NO;
