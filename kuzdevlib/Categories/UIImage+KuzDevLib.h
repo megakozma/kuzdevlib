@@ -28,7 +28,7 @@ typedef enum : NSUInteger {
 +(UIImage *)imageFromColor:(UIColor *)color size: (CGSize)size;
 
 
-+(UIImage *)mainScreenShot;
++(UIImage *)mainScreenShotFromApp: (UIApplication *)application;
 +(UIImage *)screenShotFromView: (UIView *)view;
 -(UIImage *)rotateAt: (UIImageOrientation) orientation;
 

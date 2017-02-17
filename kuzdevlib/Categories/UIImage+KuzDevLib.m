@@ -258,9 +258,9 @@ CGFloat radiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 }
 
 
-+(UIImage *)mainScreenShot
++(UIImage *)mainScreenShotFromApp: (UIApplication *)application
 {
-    for (UIWindow *window in [[UIApplication sharedApplication] windows])
+    for (UIWindow *window in [application windows])
         if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen])
             return [UIImage screenShotFromView:window];
     return NULL;
