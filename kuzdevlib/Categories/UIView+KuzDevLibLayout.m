@@ -26,6 +26,14 @@
     self.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
+-(void)forLayoutSubviews
+{
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj forLayout];
+    }];
+}
+
+
 -(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top
 {
     [self forLayout];

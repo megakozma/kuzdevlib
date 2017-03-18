@@ -15,6 +15,7 @@
 @interface UIView (KuzDevLibLayout)
 
 -(void)forLayout;
+-(void)forLayoutSubviews;
 -(void)layoutToVerCenterFixesSize: (CGSize)size right: (CGFloat)right;
 -(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top;
 -(void)layoutToCenterFixesSize:(CGSize)size;
