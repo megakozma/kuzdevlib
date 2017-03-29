@@ -103,7 +103,7 @@ static const void *TagObjectKey = &TagObjectKey;
     return f;
 }
 
--(void)setRight:(CGFloat)right
+-(void)setRightPos:(CGFloat)right
 {
     if (!self.superview)
         [NSException raise:@"setRight" format:@"superview is nil"];

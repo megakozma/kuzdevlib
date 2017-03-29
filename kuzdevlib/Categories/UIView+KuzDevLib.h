@@ -13,7 +13,7 @@
 @property (retain) NSString *tagString;
 @property (retain) NSObject *tagObject;
 
--(void) setRight: (CGFloat)right;
+-(void) setRightPos: (CGFloat)right;
 -(void) setBottom: (CGFloat)bottom;
 -(void) setHeight:(CGFloat)height;
 -(void) setTop:(CGFloat)top;
