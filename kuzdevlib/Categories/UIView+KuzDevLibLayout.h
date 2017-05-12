@@ -13,18 +13,19 @@
 
 
 @interface UIView (KuzDevLibLayout)
-
+    
 -(void)forLayout;
 -(void)forLayoutSubviews;
 -(void)layoutToVerCenterFixesSize: (CGSize)size right: (CGFloat)right;
 -(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top;
+-(void)layoutToHorzCenterFixesSize:(CGSize)size bottom:(CGFloat)bottom;
 -(void)layoutToCenterFixesSize:(CGSize)size;
 -(void)layoutFullScreen;
 -(void)layoutVerCenter;
 -(void)layoutHorzCenter;
 -(void)layoutAtInsets: (UIEdgeInsets)insets;
-
+    
 +(CGFloat)kdlLayoutDash;
 +(UIEdgeInsets)kdlLayoutAllDashInset;
-
-@end
+    
+    @end
