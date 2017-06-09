@@ -41,7 +41,7 @@
     _label = [[UILabel alloc] initWithTextColor:textColor
                                            font:font
                                            text:text];
-    [_label setLeft:[self.imgView leftIndent]+10];
+    [_label setLeftPos:[self.imgView leftIndent]+10];
     _label.numberOfLines = 0;
     [self addSubview:_label];
     _label.userInteractionEnabled = YES;
@@ -82,7 +82,7 @@
     _label = [[UILabel alloc] initWithTextColor:textColor
                                           font:font
                                           text:text];
-    [_label setLeft:[_imgView leftIndent]+10];
+    [_label setLeftPos:[_imgView leftIndent]+10];
     if (width > 0)
         [_label setWidth: width - _label.frame.origin.x];
     else

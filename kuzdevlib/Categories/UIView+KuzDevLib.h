@@ -13,11 +13,18 @@
 @property (retain) NSString *tagString;
 @property (retain) NSObject *tagObject;
 
+-(void) setRight: (CGFloat)right DEPRECATED_MSG_ATTRIBUTE("use setRightPos");
+-(void) setBottom: (CGFloat)bottom DEPRECATED_MSG_ATTRIBUTE("use setBottomPos");
+-(void) setTop:(CGFloat)top DEPRECATED_MSG_ATTRIBUTE("use setTopPos");
+-(void) setLeft:(CGFloat)left DEPRECATED_MSG_ATTRIBUTE("use setLeftPos");
+
+
 -(void) setRightPos: (CGFloat)right;
--(void) setBottom: (CGFloat)bottom;
+-(void) setBottomPos: (CGFloat)bottom;
+-(void) setTopPos:(CGFloat)top;
+-(void) setLeftPos:(CGFloat)left;
+
 -(void) setHeight:(CGFloat)height;
--(void) setTop:(CGFloat)top;
--(void) setLeft:(CGFloat)left;
 -(void) setWidth:(CGFloat)width;
 -(void) setPoint: (CGPoint)point;
 -(void) setSize: (CGSize)size;

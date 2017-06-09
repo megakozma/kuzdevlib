@@ -44,14 +44,14 @@ static const void *TagObjectKey = &TagObjectKey;
     self.frame = frame;
 }
 
--(void)setTop:(CGFloat)top
+-(void)setTopPos:(CGFloat)top
 {
     CGRect frame = self.frame;
     frame.origin.y = top;
     self.frame = frame;
 }
 
--(void)setLeft:(CGFloat)left
+-(void)setLeftPos:(CGFloat)left
 {
     CGRect frame = self.frame;
     frame.origin.x = left;
@@ -113,7 +113,7 @@ static const void *TagObjectKey = &TagObjectKey;
     self.frame = frame;
 }
 
--(void)setBottom:(CGFloat)bottom
+-(void)setBottomPos:(CGFloat)bottom
 {
     if (!self.superview)
         [NSException raise:@"setRight" format:@"superview is nil"];
@@ -158,6 +158,22 @@ static const void *TagObjectKey = &TagObjectKey;
     [self.layer setCornerRadius: radius];
     //    [v.layer setMasksToBounds:YES];
 }
+
+#pragma mark - deprecations
+
+-(void) setRight: (CGFloat)right{
+    [self setRightPos:right];
+}
+-(void) setBottom: (CGFloat)bottom{
+    [self setBottomPos:bottom];
+}
+-(void) setTop:(CGFloat)top{
+    [self setTopPos:top];
+}
+-(void) setLeft:(CGFloat)left{
+    [self setLeftPos:left];
+}
+
 
 
 @end
