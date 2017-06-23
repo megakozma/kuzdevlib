@@ -191,6 +191,11 @@
 
 +(UIImage *)screenShotFromView:(UIView *)view
 {
+    return [self screenShotFromView:view inRect:view.bounds];
+}
+
++(UIImage *)screenShotFromView:(UIView *)view inRect:(CGRect)frame
+{
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
         UIGraphicsBeginImageContextWithOptions(view.frame.size, NO, [[UIScreen mainScreen] scale]);
     } else {
@@ -199,6 +204,10 @@
     [view.layer renderInContext: UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
+    if (!CGSizeEqualToSize(frame.size, view.frame.size))
+        return [image croppedImageWithRect:frame];
+    
     return image;
 }
 

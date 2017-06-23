@@ -30,6 +30,7 @@ typedef enum : NSUInteger {
 
 +(UIImage *)mainScreenShotFromApp: (UIApplication *)application;
 +(UIImage *)screenShotFromView: (UIView *)view;
++(UIImage *)screenShotFromView:(UIView *)view inRect: (CGRect)frame;
 -(UIImage *)rotateAt: (UIImageOrientation) orientation;
 
 
