@@ -159,6 +159,14 @@ static const void *TagObjectKey = &TagObjectKey;
     //    [v.layer setMasksToBounds:YES];
 }
 
+-(void)setImageMask:(UIImage *)maskImage
+{
+    CALayer *mask = [CALayer layer];
+    mask.contents = (id)[maskImage CGImage];
+    mask.frame = CGRectMake(0, 0, maskImage.size.width, maskImage.size.height);
+    self.layer.mask = mask;
+}
+
 #pragma mark - deprecations
 
 -(void) setRight: (CGFloat)right{

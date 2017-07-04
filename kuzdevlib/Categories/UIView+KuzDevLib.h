@@ -42,6 +42,7 @@
 -(void)alignToVerCenter;
 
 
+-(void)setImageMask:(UIImage *)maskImage;
 
 
 @end
