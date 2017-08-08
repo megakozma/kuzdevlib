@@ -10,12 +10,13 @@
 
 @interface UILabel (KuzDevLib)
 
-- (instancetype)initWithAttributtedText:(NSAttributedString *)text;
-- (instancetype)initWithAttributtedText:(NSAttributedString *)text numberOfLines: (NSInteger)numberOfLines;
+- (nonnull instancetype)initWithAttributtedText:(NSAttributedString *_Nullable)text;
+- (nonnull instancetype)initWithAttributtedText:(NSAttributedString *_Nullable)text numberOfLines: (NSInteger)numberOfLines;
 
-- (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text;
-- (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines: (NSInteger)numberOfLines;
-- (instancetype)initWithTextColor:(UIColor *)textColor font:(UIFont *)font text:(NSString *)text numberOfLines: (NSInteger)numberOfLines width: (CGFloat)width DEPRECATED_MSG_ATTRIBUTE("old procedure");
+- (nonnull instancetype)initWithTextColor:(UIColor *_Nonnull)textColor font:(UIFont *_Nonnull)font text:(NSString *_Nullable)text;
+- (nonnull instancetype)initWithTextColor:(UIColor *_Nonnull)textColor font:(UIFont *_Nonnull)font text:(NSString *_Nullable)text numberOfLines: (NSInteger)numberOfLines;
+
+- (nonnull instancetype)initWithTextColor:(UIColor *_Nonnull)textColor font:(UIFont *_Nonnull)font text:(NSString *_Nullable)text numberOfLines: (NSInteger)numberOfLines width: (CGFloat)width DEPRECATED_MSG_ATTRIBUTE("old procedure");
 
 
 @end

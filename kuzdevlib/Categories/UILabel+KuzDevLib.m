@@ -53,7 +53,7 @@
     return [self initWithAttributtedText:text numberOfLines:1];
 }
 
-- (instancetype)initWithAttributtedText:(NSAttributedString *)text numberOfLines: (NSInteger)numberOfLines
+-(instancetype)initWithAttributtedText:(NSAttributedString *)text numberOfLines:(NSInteger)numberOfLines
 {
     self = [super init];
     if (self) {

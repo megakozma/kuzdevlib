@@ -11,7 +11,7 @@
 
 @implementation UIButton (KuzDevLib)
 
--(instancetype)initSelectedWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font image:(UIImage *)image imageSelected:(UIImage *)imageSelected andTappedMethod:(SEL)action andTarget:(id)target
+-(instancetype)initSelectedWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font backImage:(UIImage *)image backImageSelected:(UIImage *)imageSelected andTappedMethod:(SEL)action andTarget:(id)target
 {
     self = [UIButton buttonWithType:UIButtonTypeCustom];
     if (self) {
@@ -30,7 +30,7 @@
     return self;
 }
 
--(instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font image:(UIImage *)image imagePressed:(UIImage *)imagePressed andTappedMethod:(SEL)action andTarget:(id)target
+-(instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font backImage:(UIImage *)image backImagePressed:(UIImage *)imagePressed andTappedMethod:(SEL)action andTarget:(id)target
 {
     self = [self init];
     if (self) {
@@ -100,5 +100,14 @@
     [self centerVerticallyWithPadding:kDefaultPadding];
 }
 
+#pragma mark -  deprecated
+
+-(instancetype)initWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font image:(UIImage *)image imagePressed:(UIImage *)imagePressed andTappedMethod:(SEL)action andTarget:(id)target{
+    return [self initWithTitle:title titleColor:titleColor titleFont:font backImage:image backImagePressed:imagePressed andTappedMethod:action andTarget:target];
+}
+
+-(instancetype)initSelectedWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font image:(UIImage *)image imageSelected:(UIImage *)imageSelected andTappedMethod:(SEL)action andTarget:(id)target{
+    return [self initSelectedWithTitle:title titleColor:titleColor titleFont:font backImage:image backImageSelected:imageSelected andTappedMethod:action andTarget:target];
+}
 
 @end
