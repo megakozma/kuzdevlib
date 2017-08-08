@@ -23,7 +23,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #import "UIView+KuzDevLibLayout.h"
 #import "UIView+KuzDevLib.h"
 #import "UIButton+KuzDevLib.h"
-#import "UIAlertView+NSCookbook.h"
 #import "UILabel+KuzDevLib.h"
 #import "UIImage+KuzDevLib.h"
 #import "UIColor+KuzDevLib.h"
