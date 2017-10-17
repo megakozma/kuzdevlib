@@ -74,6 +74,28 @@
     [self.superview addConstraints:[NSArray arrayWithObjects:rConstraint, topConstraint,  nil]];
 }
 
+-(void)layoutSetSize:(CGSize)size{
+    [self forLayout];
+    
+    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:self
+                                                             attribute:NSLayoutAttributeWidth
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:NULL
+                                                             attribute:NSLayoutAttributeNotAnAttribute
+                                                            multiplier:1
+                                                              constant:size.width];
+    
+    NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:self
+                                                              attribute:NSLayoutAttributeHeight
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:NULL
+                                                              attribute:NSLayoutAttributeNotAnAttribute
+                                                             multiplier:1
+                                                               constant:size.height];
+    
+    [self addConstraints:@[width, height]];
+}
+
 -(void)layoutToHorzCenterFixesSize:(CGSize)size top:(CGFloat)top
 {
     [self forLayout];
@@ -310,3 +332,4 @@
 }
 
 @end
+
