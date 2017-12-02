@@ -18,6 +18,7 @@
 		A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F6B1D4495BA0026C55C /* UIButton+KuzDevLib.m */; };
 		A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */; };
 		A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */; };
+		A9E265551FD2877D00C8EB2E /* UITextView+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */; };
 		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
 		A9FFFC5C1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		A9D39F821D45E7C70026C55C /* UILabel+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9D39F841D4601E50026C55C /* UIImage+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KuzDevLib.m"; sourceTree = "<group>"; };
+		A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+KuzDevLib.h"; sourceTree = "<group>"; };
+		A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8111D420D3900F1D60F /* UIView+KuzDevLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLib.h"; sourceTree = "<group>"; };
 		A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLib.m"; sourceTree = "<group>"; };
 		A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +150,8 @@
 				A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */,
 				A919D2A91F2861A40094F4BC /* UITextField+KuzDevLib.h */,
 				A919D2AA1F2861A40094F4BC /* UITextField+KuzDevLib.m */,
+				A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */,
+				A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 				A946601B1D5C7B800096E3CE /* NSAttributedString+SM.m in Sources */,
 				A9FFFC5C1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m in Sources */,
 				A9B42C931D769F8D00109E4E /* NSDate+KuzDevLib.m in Sources */,
+				A9E265551FD2877D00C8EB2E /* UITextView+KuzDevLib.m in Sources */,
 				A919D2AB1F2861A40094F4BC /* UITextField+KuzDevLib.m in Sources */,
 				A9039D2D1D50953B005F227A /* UIColor+KuzDevLib.m in Sources */,
 				A9A17EFC1DA7C6F200652381 /* UITableView+KuzDevLib.m in Sources */,

@@ -30,6 +30,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
 #import "NSDate+KuzDevLib.h"
 #import "UITableView+KuzDevLib.h"
 #import "UITextField+KuzDevLib.h"
+#import "UITextView+KuzDevLib.h"
 
 
 #import "KDLLabelImage.h"
