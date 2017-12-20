@@ -10,7 +10,9 @@ s.homepage     = "http://kuz-dev.ru/"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.author       = { 'Mikhail Kuzevanov' => 'megakozma@gmail.com' }
 s.source       = { :git => "https://github.com/megakozma/kuzdevlib.git", :tag => s.version.to_s }
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
+
+#echo 3.0 > .swift-version
 #s.tvos.deployment_target = '9.0'
 
 
