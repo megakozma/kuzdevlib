@@ -18,17 +18,17 @@ s.source_files = 'kuzdevlib/KuzDev.h'
 #s.prefix_header_file = 'kuzdevlib/PrefixHeader.pch'
 
 s.subspec 'Categories' do |cat|
-    cat.source_files = 'kuzdevlib/Categories/*.{h,m}'
+    cat.source_files = 'kuzdevlib/Categories/*.{h,m,swift}'
 end
 
 s.subspec 'Views' do |views|
     views.dependency 'kuzdevlib/Categories'
-    views.source_files = 'kuzdevlib/Views/*.{h,m}'
+    views.source_files = 'kuzdevlib/Views/*.{h,m,swift}'
 
 end
 
 s.subspec 'Helpers' do |help|
-    help.source_files = 'kuzdevlib/Helpers/*.{h,m}'
+    help.source_files = 'kuzdevlib/Helpers/*.{h,m,swift}'
 end
 
 
