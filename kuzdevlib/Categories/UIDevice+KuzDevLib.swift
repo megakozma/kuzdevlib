@@ -10,15 +10,16 @@ import Foundation
 import UIKit
 
 extension UIDevice {
-    @nonobjc static var isSimulator: Bool {
+    
+    @nonobjc public static var isSimulator: Bool {
         return ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] != nil
     }
     
-    static var isIphone5: Bool{
+    public static var isIphone5: Bool{
         return UIScreen.main.bounds.size.width == 320
     }
     
-    static var isIphonePlus: Bool{
+    public static var isIphonePlus: Bool{
         return UIScreen.main.bounds.size.width == 414
     }
 }
