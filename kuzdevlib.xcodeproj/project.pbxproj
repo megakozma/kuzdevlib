@@ -92,6 +92,33 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A96342E71FEBC539003D4BE5 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				A96342E21FE8F7F0003D4BE5 /* kuzdevlib-Bridging-Header.h */,
+				A994DF321D59B509009D0C12 /* Views */,
+				A9347F901D47BB78006C23E2 /* Helpers */,
+				A9E2B8101D420D0000F1D60F /* Categories */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		A96342E81FEBC54E003D4BE5 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				A96342E91FEBC559003D4BE5 /* Categories */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		A96342E91FEBC559003D4BE5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		A994DF321D59B509009D0C12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +148,8 @@
 		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
 			isa = PBXGroup;
 			children = (
-				A994DF321D59B509009D0C12 /* Views */,
-				A9347F901D47BB78006C23E2 /* Helpers */,
-				A9E2B8101D420D0000F1D60F /* Categories */,
+				A96342E81FEBC54E003D4BE5 /* swift */,
+				A96342E71FEBC539003D4BE5 /* objc */,
 				A9E2B8231D42357800F1D60F /* KuzDev.h */,
 				A994DF361D59BED3009D0C12 /* PrefixHeader.pch */,
 			);
@@ -155,8 +181,6 @@
 				A919D2AA1F2861A40094F4BC /* UITextField+KuzDevLib.m */,
 				A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */,
 				A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */,
-				A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */,
-				A96342E21FE8F7F0003D4BE5 /* kuzdevlib-Bridging-Header.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
