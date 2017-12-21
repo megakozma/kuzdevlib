@@ -12,7 +12,6 @@
 		A9347F931D47BBAC006C23E2 /* KDLScrollTextsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9347F921D47BBAC006C23E2 /* KDLScrollTextsHelper.m */; };
 		A93AF6A21D6EC9DB006F8273 /* UIView+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E2B8121D420D3900F1D60F /* UIView+KuzDevLib.m */; };
 		A946601B1D5C7B800096E3CE /* NSAttributedString+SM.m in Sources */ = {isa = PBXBuildFile; fileRef = A946601A1D5C7B800096E3CE /* NSAttributedString+SM.m */; };
-		A96342E41FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */; };
 		A994DF351D59B752009D0C12 /* KDLLabelImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A994DF341D59B752009D0C12 /* KDLLabelImage.m */; };
 		A9A17EFC1DA7C6F200652381 /* UITableView+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A17EFB1DA7C6F200652381 /* UITableView+KuzDevLib.m */; };
 		A9B42C931D769F8D00109E4E /* NSDate+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B42C921D769F8D00109E4E /* NSDate+KuzDevLib.m */; };
@@ -45,8 +44,6 @@
 		A9347F921D47BBAC006C23E2 /* KDLScrollTextsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDLScrollTextsHelper.m; sourceTree = "<group>"; };
 		A94660191D5C7B720096E3CE /* NSAttributedString+SM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SM.h"; sourceTree = "<group>"; };
 		A946601A1D5C7B800096E3CE /* NSAttributedString+SM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SM.m"; sourceTree = "<group>"; };
-		A96342E21FE8F7F0003D4BE5 /* kuzdevlib-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kuzdevlib-Bridging-Header.h"; sourceTree = "<group>"; };
-		A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+KuzDevLib.swift"; sourceTree = "<group>"; };
 		A994DF331D59B752009D0C12 /* KDLLabelImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDLLabelImage.h; sourceTree = "<group>"; };
 		A994DF341D59B752009D0C12 /* KDLLabelImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDLLabelImage.m; sourceTree = "<group>"; };
 		A994DF361D59BED3009D0C12 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -92,33 +89,6 @@
 			path = helpers;
 			sourceTree = "<group>";
 		};
-		A96342E71FEBC539003D4BE5 /* objc */ = {
-			isa = PBXGroup;
-			children = (
-				A96342E21FE8F7F0003D4BE5 /* kuzdevlib-Bridging-Header.h */,
-				A994DF321D59B509009D0C12 /* views */,
-				A9347F901D47BB78006C23E2 /* helpers */,
-				A9E2B8101D420D0000F1D60F /* categories */,
-			);
-			path = objc;
-			sourceTree = "<group>";
-		};
-		A96342E81FEBC54E003D4BE5 /* swift */ = {
-			isa = PBXGroup;
-			children = (
-				A96342E91FEBC559003D4BE5 /* categories */,
-			);
-			path = swift;
-			sourceTree = "<group>";
-		};
-		A96342E91FEBC559003D4BE5 /* categories */ = {
-			isa = PBXGroup;
-			children = (
-				A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */,
-			);
-			path = categories;
-			sourceTree = "<group>";
-		};
 		A994DF321D59B509009D0C12 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +118,9 @@
 		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
 			isa = PBXGroup;
 			children = (
-				A96342E81FEBC54E003D4BE5 /* swift */,
-				A96342E71FEBC539003D4BE5 /* objc */,
+				A994DF321D59B509009D0C12 /* views */,
+				A9347F901D47BB78006C23E2 /* helpers */,
+				A9E2B8101D420D0000F1D60F /* categories */,
 				A9E2B8231D42357800F1D60F /* KuzDev.h */,
 				A994DF361D59BED3009D0C12 /* PrefixHeader.pch */,
 			);
@@ -249,7 +220,6 @@
 				A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */,
 				A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */,
 				A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */,
-				A96342E41FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift in Sources */,
 				A994DF351D59B752009D0C12 /* KDLLabelImage.m in Sources */,
 				A9347F931D47BBAC006C23E2 /* KDLScrollTextsHelper.m in Sources */,
 				A946601B1D5C7B800096E3CE /* NSAttributedString+SM.m in Sources */,
