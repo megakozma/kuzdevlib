@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "kuzdevlib"
-s.version      = "1.4.1"
+s.version      = "1.4.2"
 s.summary      = "Categories and Helpers."
 s.description  = <<-DESC
 Categories and Helpers for my development
@@ -19,22 +19,25 @@ s.ios.deployment_target = '9.0'
 s.source_files = 'kuzdevlib/KuzDev.h'
 #s.prefix_header_file = 'kuzdevlib/PrefixHeader.pch'
 
-s.subspec 'Categories' do |cat|
-    cat.source_files = 'kuzdevlib/Categories/*.{h,m,swift}'
+s.subspec 'objc' do |objc|
+    objc.subspec 'categories' do |cat|
+        cat.source_files = 'kuzdevlib/objc/categories/*.{h,m}'
+    end
+    objc.subspec 'views' do |views|
+        views.dependency 'kuzdevlib/objc/categories'
+        views.source_files = 'kuzdevlib/objc/views/*.{h,m}'
+    end
+
+    objc.subspec 'helpers' do |help|
+        help.source_files = 'kuzdevlib/objc/helpers/*.{h,m}'
+    end
 end
 
-s.subspec 'Views' do |views|
-    views.dependency 'kuzdevlib/Categories'
-    views.source_files = 'kuzdevlib/Views/*.{h,m,swift}'
-
+s.subspec 'swift' do |swift|
+    swift.subspec 'categories' do |cat|
+        cat.source_files = 'kuzdevlib/swift/categories/*.{swift}'
+    end
 end
-
-s.subspec 'Helpers' do |help|
-    help.source_files = 'kuzdevlib/Helpers/*.{h,m,swift}'
-end
-
-
-
 
 s.frameworks   = "UIKit"
 s.requires_arc = true
