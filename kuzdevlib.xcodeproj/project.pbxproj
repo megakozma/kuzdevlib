@@ -83,22 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9347F901D47BB78006C23E2 /* Helpers */ = {
+		A9347F901D47BB78006C23E2 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
 				A9347F911D47BBAC006C23E2 /* KDLScrollTextsHelper.h */,
 				A9347F921D47BBAC006C23E2 /* KDLScrollTextsHelper.m */,
 			);
-			path = Helpers;
+			path = helpers;
 			sourceTree = "<group>";
 		};
 		A96342E71FEBC539003D4BE5 /* objc */ = {
 			isa = PBXGroup;
 			children = (
 				A96342E21FE8F7F0003D4BE5 /* kuzdevlib-Bridging-Header.h */,
-				A994DF321D59B509009D0C12 /* Views */,
-				A9347F901D47BB78006C23E2 /* Helpers */,
-				A9E2B8101D420D0000F1D60F /* Categories */,
+				A994DF321D59B509009D0C12 /* views */,
+				A9347F901D47BB78006C23E2 /* helpers */,
+				A9E2B8101D420D0000F1D60F /* categories */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -106,26 +106,26 @@
 		A96342E81FEBC54E003D4BE5 /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				A96342E91FEBC559003D4BE5 /* Categories */,
+				A96342E91FEBC559003D4BE5 /* categories */,
 			);
 			path = swift;
 			sourceTree = "<group>";
 		};
-		A96342E91FEBC559003D4BE5 /* Categories */ = {
+		A96342E91FEBC559003D4BE5 /* categories */ = {
 			isa = PBXGroup;
 			children = (
 				A96342E31FE8F7F0003D4BE5 /* UIDevice+KuzDevLib.swift */,
 			);
-			path = Categories;
+			path = categories;
 			sourceTree = "<group>";
 		};
-		A994DF321D59B509009D0C12 /* Views */ = {
+		A994DF321D59B509009D0C12 /* views */ = {
 			isa = PBXGroup;
 			children = (
 				A994DF331D59B752009D0C12 /* KDLLabelImage.h */,
 				A994DF341D59B752009D0C12 /* KDLLabelImage.m */,
 			);
-			path = Views;
+			path = views;
 			sourceTree = "<group>";
 		};
 		A9E2B7FB1D420CE000F1D60F = {
@@ -156,7 +156,7 @@
 			path = kuzdevlib;
 			sourceTree = "<group>";
 		};
-		A9E2B8101D420D0000F1D60F /* Categories */ = {
+		A9E2B8101D420D0000F1D60F /* categories */ = {
 			isa = PBXGroup;
 			children = (
 				A94660191D5C7B720096E3CE /* NSAttributedString+SM.h */,
@@ -182,7 +182,7 @@
 				A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */,
 				A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */,
 			);
-			path = Categories;
+			path = categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
