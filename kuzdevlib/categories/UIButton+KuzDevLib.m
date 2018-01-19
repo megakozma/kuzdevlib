@@ -77,13 +77,17 @@
 {
     CGSize imageSize = self.imageView.frame.size;
     CGSize titleSize = self.titleLabel.frame.size;
+    CGFloat left = 0;
+    if (self.bounds.size.width > 0){
+        left = (self.bounds.size.width / 2) - (imageSize.width / 2) -2.5;
+    }
     
     CGFloat totalHeight = (imageSize.height + titleSize.height + padding);
     
     self.imageEdgeInsets = UIEdgeInsetsMake(- (totalHeight - imageSize.height),
+                                            left,
                                             0.0f,
-                                            0.0f,
-                                            - titleSize.width);
+                                            0);
     
     self.titleEdgeInsets = UIEdgeInsetsMake(0.0f,
                                             - imageSize.width,
