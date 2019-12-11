@@ -66,13 +66,13 @@
                         options: UIViewAnimationOptionCurveEaseOut
      
                      animations:^{
-                         CGRect frame = parentView.frame;
-                         frame.origin.y -= y;
-                         parentView.frame = frame;
-                     }
+        CGRect frame = self->parentView.frame;
+        frame.origin.y -= y;
+        self->parentView.frame = frame;
+    }
      
                      completion:^(BOOL finished) {
-                     }];
+    }];
     
 }
 
@@ -85,18 +85,18 @@
                         options: UIViewAnimationOptionCurveEaseOut
      
                      animations:^{
-                         if (top != MAXFLOAT)
-                         {
-                             CGRect frame = parentView.frame;
-                             frame.origin.y =  top;
-                             parentView.frame = frame;
-                         }
-                         
-                     }
+        if (self->top != MAXFLOAT)
+        {
+            CGRect frame = self->parentView.frame;
+            frame.origin.y =  self->top;
+            self->parentView.frame = frame;
+        }
+        
+    }
      
                      completion:^(BOOL finished) {
-                         
-                     }];
+        
+    }];
     NSLog(@"SMScrollTexts.keyboardHide");
     
 }
