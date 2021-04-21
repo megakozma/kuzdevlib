@@ -20,6 +20,7 @@
 		A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D39F851D4601E50026C55C /* UIImage+KuzDevLib.m */; };
 		A9E265551FD2877D00C8EB2E /* UITextView+KuzDevLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */; };
 		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
+		A9E8DCEA262FF806008ED8C3 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */; };
 		A9FFFC5C1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		A9E2B8181D420DAB00F1D60F /* libkuzdevlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkuzdevlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E2B8211D420DDE00F1D60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A9E2B8231D42357800F1D60F /* KuzDev.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KuzDev.h; sourceTree = "<group>"; };
+		A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		A9FFFC5A1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLibLayout.h"; sourceTree = "<group>"; };
 		A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLibLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,23 @@
 		A9E2B8101D420D0000F1D60F /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				A9E8DCE6262FF7B3008ED8C3 /* ObjC */,
+				A9E8DCE5262FF7AC008ED8C3 /* Swift */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		A9E8DCE5262FF7AC008ED8C3 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		A9E8DCE6262FF7B3008ED8C3 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
 				A94660191D5C7B720096E3CE /* NSAttributedString+SM.h */,
 				A946601A1D5C7B800096E3CE /* NSAttributedString+SM.m */,
 				A9B42C911D769F8D00109E4E /* NSDate+KuzDevLib.h */,
@@ -153,7 +172,7 @@
 				A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */,
 				A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */,
 			);
-			path = categories;
+			path = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +204,7 @@
 				KnownAssetTags = (
 					New,
 				);
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "kuz-dev.ru";
 				TargetAttributes = {
 					A9E2B8171D420DAB00F1D60F = {
@@ -227,6 +246,7 @@
 				A9FFFC5C1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m in Sources */,
 				A9B42C931D769F8D00109E4E /* NSDate+KuzDevLib.m in Sources */,
 				A9E265551FD2877D00C8EB2E /* UITextView+KuzDevLib.m in Sources */,
+				A9E8DCEA262FF806008ED8C3 /* UIView+Layout.swift in Sources */,
 				A919D2AB1F2861A40094F4BC /* UITextField+KuzDevLib.m in Sources */,
 				A9039D2D1D50953B005F227A /* UIColor+KuzDevLib.m in Sources */,
 				A9A17EFC1DA7C6F200652381 /* UITableView+KuzDevLib.m in Sources */,
@@ -260,6 +280,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,6 +336,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -333,9 +355,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -344,14 +367,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kuzdevlib/PrefixHeader.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "kuzdevlib/Categories/kuzdevlib-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "kuzdevlib/kuzdevlib-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -359,13 +383,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/kuzdevlib/PrefixHeader.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "kuzdevlib/Categories/kuzdevlib-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "kuzdevlib/kuzdevlib-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
