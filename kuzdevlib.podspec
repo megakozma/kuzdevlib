@@ -20,9 +20,14 @@ s.source_files = 'kuzdevlib/KuzDev.h'
 #s.prefix_header_file = 'kuzdevlib/PrefixHeader.pch'
 
 
-s.subspec 'categories' do |cat|
+s.subspec 'categories/ObjC' do |cat|
     cat.source_files = 'kuzdevlib/categories/*.{h,m}'
 end
+
+s.subspec 'categories/Swift' do |cat|
+    cat.source_files = 'kuzdevlib/categories/*.{swift}'
+end
+
 
 s.subspec 'views' do |views|
     views.dependency 'kuzdevlib/categories'
