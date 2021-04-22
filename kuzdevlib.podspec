@@ -10,7 +10,7 @@ s.homepage     = "http://kuz-dev.ru/"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.author       = { 'Mikhail Kuzevanov' => 'megakozma@gmail.com' }
 s.source       = { :git => "https://github.com/megakozma/kuzdevlib.git", :tag => s.version.to_s }
-s.ios.deployment_target = '9.0'
+s.ios.deployment_target = '13.0'
 
 #echo 3.0 > .swift-version
 #s.tvos.deployment_target = '9.0'
@@ -20,12 +20,12 @@ s.source_files = 'kuzdevlib/KuzDev.h'
 #s.prefix_header_file = 'kuzdevlib/PrefixHeader.pch'
 
 
-s.subspec 'categories/ObjC' do |cat|
-    cat.source_files = 'kuzdevlib/categories/*.{h,m}'
+s.subspec 'categories_ObjC' do |cato|
+    cato.source_files = 'kuzdevlib/categories/ObjC/*.{h,m}'
 end
 
-s.subspec 'categories/Swift' do |cat|
-    cat.source_files = 'kuzdevlib/categories/*.{swift}'
+s.subspec 'categories_Swift' do |cats|
+    cats.source_files = 'kuzdevlib/categories/Swift/*.{swift}'
 end
 
 
