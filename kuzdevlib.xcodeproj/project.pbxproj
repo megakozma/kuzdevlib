@@ -215,11 +215,11 @@
 			};
 			buildConfigurationList = A9E2B7FF1D420CE000F1D60F /* Build configuration list for PBXProject "kuzdevlib" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = A9E2B7FB1D420CE000F1D60F;
 			productRefGroup = A9E2B8051D420CE000F1D60F /* Products */;

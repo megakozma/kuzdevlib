@@ -13,7 +13,7 @@
 
 -(instancetype)initSelectedWithTitle:(NSString *)title titleColor:(UIColor *)titleColor titleFont:(UIFont *)font backImage:(UIImage *)image backImageSelected:(UIImage *)imageSelected andTappedMethod:(SEL)action andTarget:(id)target
 {
-    self = [UIButton buttonWithType:UIButtonTypeCustom];
+    self = [self init];
     if (self) {
         [self setTitle: title forState: UIControlStateNormal];
         [self addTarget:target
