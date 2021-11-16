@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 extension UIView{
-    @discardableResult func kdlLayoutToBottomGuide(guide: UILayoutGuide, constant: CGFloat)->NSLayoutConstraint{
+    @discardableResult
+    public  func kdlLayoutToBottomGuide(guide: UILayoutGuide, constant: CGFloat)->NSLayoutConstraint{
         let constraint = self.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: constant)
         NSLayoutConstraint.activate([
             constraint
@@ -18,7 +19,8 @@ extension UIView{
         return constraint
     }
     
-    @discardableResult func kdlLayoutToTopGuide(guide: UILayoutGuide, constant: CGFloat)->NSLayoutConstraint{
+    @discardableResult
+    public func kdlLayoutToTopGuide(guide: UILayoutGuide, constant: CGFloat)->NSLayoutConstraint{
         let constraint = self.topAnchor.constraint(equalTo: guide.topAnchor, constant: constant)
         NSLayoutConstraint.activate([
             constraint
@@ -28,7 +30,7 @@ extension UIView{
     
     
     
-    func kdlLayoutToLeft(left: CGFloat){
+    public func kdlLayoutToLeft(left: CGFloat){
         guard let superview = superview else { fatalError("superview not setted") }
         translatesAutoresizingMaskIntoConstraints = false
         superview.addConstraint(NSLayoutConstraint(item: self,
@@ -40,7 +42,7 @@ extension UIView{
                                                    constant: left))
     }
     
-    func kdlLayoutToRight(right: CGFloat){
+    public func kdlLayoutToRight(right: CGFloat){
         guard let superview = superview else { fatalError("superview not setted") }
         translatesAutoresizingMaskIntoConstraints = false
         superview.addConstraint(NSLayoutConstraint(item: self,
