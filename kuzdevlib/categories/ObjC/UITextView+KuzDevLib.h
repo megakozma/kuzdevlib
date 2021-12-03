@@ -10,6 +10,6 @@
 
 @interface UITextView (KuzDevLib)
 
--(void) createToolBarWithRightText: (NSString *)rightText;
+-(void) createToolBarWithRightText: (nullable NSString *)rightText backgroundColor:(nullable UIColor *)backColor textColor:(nullable UIColor *)textColor;
 
 @end

@@ -10,12 +10,14 @@
 
 @implementation UITextView (KuzDevLib)
 
--(void) createToolBarWithRightText: (NSString *)rightText
-{
+-(void)createToolBarWithRightText:(NSString *)rightText backgroundColor:(UIColor *)backColor textColor:(UIColor *)textColor{
+    
     if (!rightText)
         rightText = NSLocalizedString(@"Готово", @"Готово");
     UIToolbar *keyboardToolbar = [[UIToolbar alloc] init];
-    [keyboardToolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [keyboardToolbar setBarStyle:UIBarStyleDefault];
+    [keyboardToolbar setTintColor:textColor];
+    [keyboardToolbar setBarTintColor:backColor];
     [keyboardToolbar sizeToFit];
     
     UIBarButtonItem *extraSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
@@ -26,6 +28,7 @@
     
     self.inputAccessoryView = keyboardToolbar;
 }
+
 
 -(void)buttonTap: (id)sender{
     [self endEditing:YES];
