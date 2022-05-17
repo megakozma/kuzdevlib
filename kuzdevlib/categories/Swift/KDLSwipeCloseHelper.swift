@@ -17,8 +17,11 @@ public class KDLSwipeCloseHelper {
     private var dismiss: KDLVoidEvent? = nil
     private var bottomConstraint: NSLayoutConstraint?
     
+    public init() {
+        
+    }
     
-    func setToView(view: UIView, bottomConstraint: NSLayoutConstraint?, dismiss: KDLVoidEvent?){
+    public func setToView(view: UIView, bottomConstraint: NSLayoutConstraint?, dismiss: KDLVoidEvent?){
         self.view = view
         self.dismiss = dismiss
         self.bottomConstraint = bottomConstraint
