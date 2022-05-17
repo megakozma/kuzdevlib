@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-typealias KDLVoidEvent = ()->Void
+public typealias KDLVoidEvent = ()->Void
 
-class KDLSwipeCloseHelper {
+public class KDLSwipeCloseHelper {
     
     private var view: UIView? = nil
     private var dismiss: KDLVoidEvent? = nil
