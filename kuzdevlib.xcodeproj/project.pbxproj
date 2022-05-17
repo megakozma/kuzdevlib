@@ -22,6 +22,7 @@
 		A9E2B8221D420DDE00F1D60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E2B8211D420DDE00F1D60F /* UIKit.framework */; };
 		A9E8DCEA262FF806008ED8C3 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */; };
 		A9FFFC5C1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */; };
+		B8D5AF372833845B00D48BB6 /* KDLSwipeCloseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5AF362833845B00D48BB6 /* KDLSwipeCloseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,7 @@
 		A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		A9FFFC5A1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLibLayout.h"; sourceTree = "<group>"; };
 		A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLibLayout.m"; sourceTree = "<group>"; };
+		B8D5AF362833845B00D48BB6 /* KDLSwipeCloseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDLSwipeCloseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */,
+				B8D5AF362833845B00D48BB6 /* KDLSwipeCloseHelper.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				A93AF6A21D6EC9DB006F8273 /* UIView+KuzDevLib.m in Sources */,
 				A9D39F831D45E7C70026C55C /* UILabel+KuzDevLib.m in Sources */,
 				A9D39F6C1D4495BA0026C55C /* UIButton+KuzDevLib.m in Sources */,
+				B8D5AF372833845B00D48BB6 /* KDLSwipeCloseHelper.swift in Sources */,
 				A9D39F861D4601E50026C55C /* UIImage+KuzDevLib.m in Sources */,
 				A994DF351D59B752009D0C12 /* KDLLabelImage.m in Sources */,
 				A9347F931D47BBAC006C23E2 /* KDLScrollTextsHelper.m in Sources */,
