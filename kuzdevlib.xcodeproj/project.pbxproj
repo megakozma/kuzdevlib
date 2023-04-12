@@ -69,6 +69,7 @@
 		A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		A9FFFC5A1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KuzDevLibLayout.h"; sourceTree = "<group>"; };
 		A9FFFC5B1DE80E9E0028F9BE /* UIView+KuzDevLibLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KuzDevLibLayout.m"; sourceTree = "<group>"; };
+		B8B260B829E68674006F7572 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B8D5AF362833845B00D48BB6 /* KDLSwipeCloseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDLSwipeCloseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +106,7 @@
 		A9E2B7FB1D420CE000F1D60F = {
 			isa = PBXGroup;
 			children = (
+				B8B260B829E68674006F7572 /* Package.swift */,
 				A9E2B8211D420DDE00F1D60F /* UIKit.framework */,
 				A9E2B8061D420CE000F1D60F /* kuzdevlib */,
 				A9E2B8051D420CE000F1D60F /* Products */,
