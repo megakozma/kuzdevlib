@@ -7,9 +7,8 @@ let package = Package(
     name: "kuzdevlib",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "kuzdevlib",
-            targets: ["kuzdevlibSWIFT", "kuzdevlibOBJC"]),
+        .library(name: "kuzdevlibSWIFT", targets: ["kuzdevlibSWIFT"]),
+        .library(name: "kuzdevlibOBJC",  targets: ["kuzdevlibOBJC"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
