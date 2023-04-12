@@ -124,34 +124,42 @@
 		A9E2B8061D420CE000F1D60F /* kuzdevlib */ = {
 			isa = PBXGroup;
 			children = (
-				A994DF321D59B509009D0C12 /* views */,
-				A9347F901D47BB78006C23E2 /* helpers */,
-				A9E2B8101D420D0000F1D60F /* categories */,
+				B8B260BC29E68DE7006F7572 /* objc */,
+				B8B260BB29E68DDC006F7572 /* swift */,
 				A9E2B8231D42357800F1D60F /* KuzDev.h */,
 				A994DF361D59BED3009D0C12 /* PrefixHeader.pch */,
 			);
 			path = kuzdevlib;
 			sourceTree = "<group>";
 		};
-		A9E2B8101D420D0000F1D60F /* categories */ = {
+		B8B260BB29E68DDC006F7572 /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				A9E8DCE6262FF7B3008ED8C3 /* ObjC */,
-				A9E8DCE5262FF7AC008ED8C3 /* Swift */,
+				B8B260BD29E68E05006F7572 /* Extentions */,
 			);
-			path = categories;
+			path = swift;
 			sourceTree = "<group>";
 		};
-		A9E8DCE5262FF7AC008ED8C3 /* Swift */ = {
+		B8B260BC29E68DE7006F7572 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				B8B260BE29E68E19006F7572 /* Extentions */,
+				A9347F901D47BB78006C23E2 /* helpers */,
+				A994DF321D59B509009D0C12 /* views */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		B8B260BD29E68E05006F7572 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				A9E8DCE9262FF806008ED8C3 /* UIView+Layout.swift */,
 				B8D5AF362833845B00D48BB6 /* KDLSwipeCloseHelper.swift */,
 			);
-			path = Swift;
+			path = Extentions;
 			sourceTree = "<group>";
 		};
-		A9E8DCE6262FF7B3008ED8C3 /* ObjC */ = {
+		B8B260BE29E68E19006F7572 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				A94660191D5C7B720096E3CE /* NSAttributedString+SM.h */,
@@ -177,7 +185,7 @@
 				A9E265531FD2877D00C8EB2E /* UITextView+KuzDevLib.h */,
 				A9E265541FD2877D00C8EB2E /* UITextView+KuzDevLib.m */,
 			);
-			path = ObjC;
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
